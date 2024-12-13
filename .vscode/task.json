@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build cuda",
+      "type": "shell",
+      "command": "nvcc",
+      "args": ["simple_cuda.cu", "-o", "simple_cuda.exe"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
